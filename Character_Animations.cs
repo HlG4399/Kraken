@@ -7,7 +7,7 @@ public class Character_Animations : MonoBehaviour
     private float v, run, h;//玩家行走速度,冲刺速度和转动角度
     private bool isJump;//判断玩家是否跳跃
 
-
+	//测试
     void Start()
     {
         animator = this.GetComponent<Animator>();
