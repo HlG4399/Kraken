@@ -6,16 +6,16 @@ using System.Collections;
 /// </summary>
 public class ActiveAttack : MonoBehaviour
 {
-
-    // Use this for initialization
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
+    public GameObject waterWave;
     void Update()
     {
-
+        if(Input.GetKey(KeyCode.A))
+        {
+            waterWave.SetActive(true);
+        }
+        if(Input.GetKeyUp(KeyCode.A))
+        {
+            waterWave.SetActive(false);
+        }
     }
 }

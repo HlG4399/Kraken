@@ -2,18 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// 敌人受到攻击时执行该脚本
+/// </summary>
 public class BeingAttacked : MonoBehaviour
 {
-
-    // Use this for initialization
-    void Start()
+    void OnParticleCollision(GameObject obj)
     {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        if(obj.tag=="aa")
+        {
+            Debug.Log("Test");
+        }
     }
 }
