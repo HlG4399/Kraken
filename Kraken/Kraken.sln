@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kraken", "Assembly-CSharp.csproj", "{B3474E1D-A41B-15D8-1283-B0AB0A1B263B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3474E1D-A41B-15D8-1283-B0AB0A1B263B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3474E1D-A41B-15D8-1283-B0AB0A1B263B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3474E1D-A41B-15D8-1283-B0AB0A1B263B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3474E1D-A41B-15D8-1283-B0AB0A1B263B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
