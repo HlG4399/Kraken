@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Character_Animations : MonoBehaviour
 {
+	public Rigidbody player;//主角的刚体
     private Animator animator;//玩家动作的动画切换
     private float v, run, h;//玩家行走速度,冲刺速度和转动角度
     private bool isJump;//判断玩家是否跳跃
@@ -10,7 +11,7 @@ public class Character_Animations : MonoBehaviour
 	//测试
     void Start()
     {
-        animator = this.GetComponent<Animator>();
+        //animator = this.GetComponent<Animator>();
         isJump = false;
     }
 
@@ -19,8 +20,8 @@ public class Character_Animations : MonoBehaviour
     /// </summary>
     void Update()
     {
-        v = Input.GetAxis("Vertical");
-        h = Input.GetAxis("Horizontal");
+        v = Input.GetAxis("Horizontal");
+		player.velocity =new Vector3(v,0);
         isJump = false;
         if (Input.GetKeyDown(KeyCode.Space)) isJump = true;
         Sprinting();
@@ -29,7 +30,7 @@ public class Character_Animations : MonoBehaviour
     /// <summary>
     /// 根据玩家状态的不同播放相应的动画
     /// </summary>
-    void FixedUpdate()
+    /*void FixedUpdate()
     {
         animator.SetFloat("Walk", v);
         animator.SetFloat("Run", run);
@@ -39,7 +40,7 @@ public class Character_Animations : MonoBehaviour
         {
             this.gameObject.transform.Rotate(0, h * 0.9f, 0);
         }
-    }
+    }*/
 
     /// <summary>
     /// 玩家冲刺
